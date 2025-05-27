@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_profile/component/detail_tab.dart';
+import 'package:flutter_profile/component/m_buttons.dart';
 import 'package:flutter_profile/component/m_header.dart';
 import 'package:flutter_profile/component/m_info.dart';
 import 'package:flutter_profile/component/m_mainbutton.dart';
@@ -31,14 +32,11 @@ class Homepage extends StatelessWidget {
       body: Column(
         children: [
           MHeader(),
+          SizedBox(height: 20),
           MInfo(),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              MMainButton(),
-              MSubButton(),
-            ],
-          ),
+          SizedBox(height: 20),
+          MButtons(),
+          SizedBox(height: 20),
           Expanded(
             child: DetailTab(),
           ),

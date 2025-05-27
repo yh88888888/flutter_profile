@@ -26,8 +26,14 @@ class MHeader extends StatelessWidget {
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text("Getinthere"),
-            Text("Programmer/"),
+            Text(
+              "Getinthere",
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+            Text("Programmer/Writer/Teacher"),
             Text("TherePrograming"),
           ],
         ),
